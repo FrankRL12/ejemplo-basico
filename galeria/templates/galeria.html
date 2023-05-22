@@ -1,0 +1,29 @@
+{% extends 'base.html' %} 
+
+
+{% load static %}
+
+{% block content %}
+    <!--Fin del menu-->
+
+    <!--catalago-->
+    <main class="catalago">
+        <div class="container">
+            <div class="row">
+              {% for galeria in galerias %}
+              <div class="col-md-3 p-3 degradado">
+                <div class="card">
+                  <img src="{{galeria.imagen.url}}" class="card-img-top" alt="imagen del producto">
+                  <div class="card-body">
+                    <h5 class="card-title">{{galeria.titulo}}</h5>
+                    <p class="card-text">{{galeria.descripcion}}</p>
+                    <p class="card-text">{{galeria.precio}}&nbsp;$MX</p>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+        </div>
+    </main>
+    <!--Fin del catalago-->
+    {% endblock content %}

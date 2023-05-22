@@ -1,0 +1,76 @@
+{% extends 'base.html' %} 
+
+
+{% load static %}
+
+{% block content %}
+    <!--Fin del menu-->
+    <main>
+        <div class="slider-container">
+            <div class="slider">
+              <img src="{% static 'img/carusel.jpg' %}" alt="">
+              <img src="{% static 'img/carusel1.jpg' %}" alt="Slide 2">
+              <img src="{% static 'img/carusel2.jpg' %}" alt="Slide 3">
+              <img src="{% static 'img/carusel3.jpg' %}" alt="Slide 4">
+            </div>
+            <div class="slider-controls">
+              <button class="prev"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+              </svg></button>
+              <button class="next"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+              </svg></button>
+            </div>
+          </div>
+    </main>
+    <section>
+        <div class="container-fluid mt-4">
+            <div class="row">
+              <div class="col-md-8">
+                <img src="{% static 'img/carusel1.jpg' %}" class="img-fluid" alt="Imagen">
+              </div>
+              <div class="col-md-4">
+                <h2 class="Titulo">MOTO HONDA AL MEJOR PRECIO</h2>
+                <p class="Descripcion">¡Bienvenido! Si estás buscando promociones de motos Honda al mejor precio, ¡estás en el lugar correcto!
+
+                    En Honda, ofrecemos una amplia gama de modelos de motocicletas con promociones y descuentos exclusivos para ayudarte a ahorrar en tu compra. Ya sea que estés buscando una moto deportiva, una touring o una scooter, tenemos algo para todos los gustos y necesidades.
+                    
+                    Además, en Honda también ofrecemos planes de financiamiento atractivos que te permitirán obtener la moto que deseas a un precio accesible y con cómodas cuotas mensuales. Nuestro equipo de ventas estará encantado de ayudarte a encontrar el modelo que mejor se adapte a tus necesidades y presupuesto.
+                    
+                    ¡No esperes más! Visita tu concesionario Honda más cercano y aprovecha nuestras promociones de motos al mejor precio. ¡Te esperamos!</p>
+              </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                  <h2 class="Titulo">DISFRUTALA Y VIAJA A DONDE TU QUIERAS</h2>
+                  <p class="Descripcion">¡En Honda, creemos que una moto es más que un simple vehículo, es una experiencia de libertad y aventura!
+
+                    Nuestras motocicletas están diseñadas para ofrecerte la máxima comodidad y seguridad en cada viaje, para que puedas disfrutar de la carretera y explorar nuevos lugares sin preocupaciones.
+                    
+                    Con un amplio catálogo de modelos, desde las deportivas más veloces hasta las touring más cómodas, Honda tiene la moto perfecta para ti. Cada una de nuestras motocicletas está equipada con tecnología de vanguardia, sistemas de seguridad avanzados y un diseño innovador que te permitirá sentirte en control y disfrutar del camino.
+                    
+                    Además, en Honda sabemos que la aventura no tiene límites, por eso nuestras motos están diseñadas para ofrecerte una conducción suave y confortable, incluso en los terrenos más difíciles. ¡Ven y descúbrela!</p>
+                </div>
+                <div class="col-md-8">
+                  <img src="{% static 'img/carusel3.jpg' %}" class="img-fluid" alt="Imagen">
+                  </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-8">
+                  <img src="{% static 'img/carusel2.jpg' %}" class="img-fluid" alt="Imagen">
+                </div>
+                <div class="col-md-4">
+                  <h2 class="Titulo">LOS LIMITES DE LOS KILOMETRAJA</h2>
+                  <p class="Descripcion">En Honda, nos esforzamos por ofrecer motocicletas que sean confiables, duraderas y capaces de brindarte una experiencia de conducción excepcional. Una de las maneras en que hacemos esto es estableciendo límites de kilometraje que garanticen el máximo rendimiento de cada moto.
+
+                    Cada modelo de Honda viene con un límite de kilometraje recomendado, que te permite disfrutar de tu moto de manera segura y sin comprometer su desempeño. Este límite de kilometraje puede variar según el modelo y el uso que se le dé a la moto, pero siempre se establece para garantizar que la moto tenga una larga vida útil y un rendimiento óptimo.</p>
+                </div>
+            </div>
+              
+        </div>
+          
+    </section>
+    {% endblock content %}
+   
